@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kwilliams
- * Date: 11/27/17
- * Time: 5:25 PM
- */
+
 
 class routes
 {
@@ -90,8 +85,8 @@ class routes
         $route = new route();
         $route->http_method = 'POST';
         $route->action = 'login';
-        $route->page = 'accounts';
-        $route->controller = 'accountsController';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
         $route->method = 'login';
         $routes[] = $route;
 

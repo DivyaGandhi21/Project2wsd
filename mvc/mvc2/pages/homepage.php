@@ -42,7 +42,7 @@
 <div class="login-page">
 				<div class="form">
 					<h3>LOGIN FORM</h3>
-					<form class="login-form" action="index.php?page=accounts&action=login" method="post" action="" enctype="multipart/form-data">
+					<form class="login-form" action="index.php?page=tasks&action=login" method="post" action="" enctype="multipart/form-data">
 						<input type="text" name="email" id="login" placeholder="Username" required autofocus/>
 						<input type="password" name="password" id="senha" placeholder="Password" required autofocus/>
 						<button name="entrar" type="submit" id="contact-submit" value="entrar">Login</button>
