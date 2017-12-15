@@ -17,6 +17,10 @@
 
 <body>
 <h1>YOUR TASKS</h1>
+<br>
+<a href ="index.php?page=tasks&action=create">Insert</a>
+<br>
+<br>
 <?php
 //this is how you print something
 
