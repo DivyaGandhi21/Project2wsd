@@ -22,9 +22,16 @@
 
 print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
-</form>
+<div>
+
+    <a href="index.php?page=tasks&action=edit&id=<?php echo $data->id; ?>">Edit Task</a>
+
+    <br><br>
+    <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form2">
+        <button type="submit" form="form2" value="delete">Delete Task</button>
+    </form>
+
+</div>
 
 
 
