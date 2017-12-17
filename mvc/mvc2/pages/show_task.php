@@ -30,12 +30,8 @@ print utility\htmlTable::generateTableFromOneRecord($data);
     <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form2">
         <button type="submit" form="form2" value="delete">Delete Task</button>
     </form>
-
+<h2><label><a href="index.php">Logout</a></label></h2>
 </div>
-
-
-
-
 <script src="js/scripts.js"></script>
 </body>
 </html>

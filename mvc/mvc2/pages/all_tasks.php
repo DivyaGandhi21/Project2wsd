@@ -25,9 +25,8 @@
 //this is how you print something
 
 print utility\htmlTable::genarateTableFromMultiArray($data);
-
-
 ?>
+<h2><label><a href="index.php">Logout</a></label></h2>
 
 
 <script src="js/scripts.js"></script>

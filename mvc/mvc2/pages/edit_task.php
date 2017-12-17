@@ -7,32 +7,27 @@
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
-
-    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <![endif]-->
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+<link rel="stylesheet" href="login.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-        <div class="container">
+        <div class="login-page">
+				<div class="form">
+					<h3>UPDATE DETAILS</h3>
             <form action="index.php?page=tasks&action=edit&id=<?php echo $data->id; ?>" method="post">
 
-			<label><b>ID: <?php echo $_GET['id']; ?></b></label><br>
+			<label><b>ID: <?php echo $_GET['id']; ?></b></label><br><br>
 			
-                <input type="datetime" placeholder="Created Date" name="createddate"><br>
-
-                <input type="datetime" placeholder="Due Date" name="duedate"><br>
-
-                <input type="text" placeholder="Message" name="message"><br>
-
-                <input type="number" placeholder="Is Done" name="isdone"><br>
-
-                <button type="submit" name="update">Update</button>
+                <input type="text" name="createddate" id="createddate" placeholder="Create Date" required autofocus/>
+						<input type="text" name="duedate" id="duedate" placeholder="Due Date" required autofocus/>
+						<input type="text" name="message" id="message" placeholder="Message" required autofocus/>
+						<input type="text" name="isdone" id="isdone" placeholder="IS Done" required autofocus/><br>
+						<button name="entrar" type="submit" id="contact-submit" value="entrar">Update</button>
+                
             </form>
         </div>
 
