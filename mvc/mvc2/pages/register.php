@@ -8,8 +8,10 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-	<link rel='stylesheet prefetch' href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css'>
-	<link rel="stylesheet" href="stylstyle_register.css">
+ <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+<link rel="stylesheet" href="login.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
 	
 
     <!--[if lt IE 9]>
@@ -18,43 +20,23 @@
 </head>
 
 <body>
+				<div class="login-page">
+				<div class="form">
+					<h3>REGISTRATION FORM</h3>
+					<form action="index.php?page=accounts&action=register" method="post" action="" enctype="multipart/form-data">
+						<input type="text" name="First Name" id="First Name" placeholder="First Name" required autofocus/>
+						<input type="text" name="Last Name" id="Last Name" placeholder="Last Name" required autofocus/>
+						<input type="text" name="Email" id="Email" placeholder="Email" required autofocus/>
+						<input type="text" name="Contact No" id="Contact No" placeholder="Contact No" required autofocus/>
+						<input type="text" name="Birth Date" id="Birth Date" placeholder="Birth Date" required autofocus/>
+						<input type="text" name="Gender" id="Gender" placeholder="Gender" required autofocus/>
+						<input type="password" name="password" id="Password" placeholder="Password" required autofocus/>
+						<button name="entrar" type="submit" id="contact-submit" value="entrar">Register</button>
+						
+					</form>
+				</div>
+			</div>
 
-<h3>CREATE ACCOUNT</h3>
-
-<div class="main">
-		<div class="border"></div>
-		<form action="index.php?page=accounts&action=register" method="post">
-				<div class="input-group">
-					<input type="text" name="First Name" value="" placeholder="First Name" class="form-control" required >	
-					<div class="input-icon"><i class="fa fa-user"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="text" name="Last Name" value="" placeholder="Last Name" class="form-control" required >	
-					<div class="input-icon"><i class="fa fa-user"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="email" name="email" value="" placeholder="Email" class="form-control" required>
-					<div class="input-icon"><i class="fa fa-envelope"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="text" name="Contact No" value="" placeholder="Contact No" class="form-control" required>
-					<div class="input-icon"><i class="fa fa-envelope"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="text" name="Birth Date" value="" placeholder="Birth Date" class="form-control" required>
-					<div class="input-icon"><i class="fa fa-envelope"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="text" name="Gender" value="" placeholder="Gender" class="form-control" required>
-					<div class="input-icon"><i class="fa fa-envelope"></i></div>
-				</div>
-				<div class="input-group">
-					<input type="password" name="password" value="" placeholder="Password" class="form-control" required >
-					<div class="input-icon"><i class="fa  fa-lock"></i></div>
-				</div>
-				<br>
-				<input type="submit" name="signup" value="Sign Up" class="signup" >
-		</form>
 	</div>
 
 
