@@ -69,18 +69,18 @@ public static function edit()
     //this would be for the post for sending the task edit form
     public static function store()
     {
+session_start();
 $task = new todo();
-$task->owneremail = $_POST['owneremail'];
-print $_POST['owneremail'];
-$task->ownerid = $_POST['ownerid'];
 $task->createddate = $_POST['createddate'];
 $task->duedate = $_POST['duedate'];
 $task->message = $_POST['message'];
 $task->isdone = $_POST['isdone'];
+$resultset = accounts::findUser($_SESSION['userID']);
+//print_r($resultset);
+$task->ownerid = $resultset->id;
+$task->owneremail = $resultset->email;
 $task->save();
-//self::getTemplate('all_tasks', $user);
-
-header("Location: index.php?page=tasks&action=all");  
+header('Location: index.php?page=tasks&action=all');
     }
 
     public static function save() {
