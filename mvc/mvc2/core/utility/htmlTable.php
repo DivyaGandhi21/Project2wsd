@@ -7,7 +7,7 @@ class htmlTable
 {
     public static function genarateTableFromMultiArray($array)
     {
-
+if($array!=null){
         $tableGen = '<table border="1"cellpadding="10">';
         $tableGen .= '<tr>';
         //this grabs the first element of the array so we can extract the field headings for the table
@@ -34,7 +34,15 @@ class htmlTable
 
         $tableGen .= '</table>';
 
-        return $tableGen;
+return $tableGen;
+
+}
+
+else {
+	$text = 'Sorry no record found for you. Please insert new record';
+	print $text;
+	
+}
     }
 
     public static function generateTableFromOneRecord($innerArray)

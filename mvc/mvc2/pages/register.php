@@ -8,8 +8,8 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-	<link rel="stylesheet" href="login.css" type="text/css">
+	<link rel='stylesheet prefetch' href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css'>
+	<link rel="stylesheet" href="stylstyle_register.css">
 	
 
     <!--[if lt IE 9]>
@@ -21,16 +21,41 @@
 
 <h3>CREATE ACCOUNT</h3>
 
-<form action="index.php?page=accounts&action=register" method="post">
-    First name: <input type="text" name="fname"><br>
-    Last name: <input type="text" name="lname"><br>
-    Email: <input type="text" name="email"><br>
-    Phone: <input type="text" name="phone"><br>
-    Birthday: <input type="text" name="birthday"><br>
-    Gender: <input type="text" name="gender"><br>
-    Password: <input type="password" name="password"><br><br>
-    <button name="entrar" type="submit" id="contact-submit" bgcolor = "#43A047" value="entrar">CREATE</button>
-</form>
+<div class="main">
+		<div class="border"></div>
+		<form action="index.php?page=accounts&action=register" method="post">
+				<div class="input-group">
+					<input type="text" name="First Name" value="" placeholder="First Name" class="form-control" required >	
+					<div class="input-icon"><i class="fa fa-user"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="text" name="Last Name" value="" placeholder="Last Name" class="form-control" required >	
+					<div class="input-icon"><i class="fa fa-user"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="email" name="email" value="" placeholder="Email" class="form-control" required>
+					<div class="input-icon"><i class="fa fa-envelope"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="text" name="Contact No" value="" placeholder="Contact No" class="form-control" required>
+					<div class="input-icon"><i class="fa fa-envelope"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="text" name="Birth Date" value="" placeholder="Birth Date" class="form-control" required>
+					<div class="input-icon"><i class="fa fa-envelope"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="text" name="Gender" value="" placeholder="Gender" class="form-control" required>
+					<div class="input-icon"><i class="fa fa-envelope"></i></div>
+				</div>
+				<div class="input-group">
+					<input type="password" name="password" value="" placeholder="Password" class="form-control" required >
+					<div class="input-icon"><i class="fa  fa-lock"></i></div>
+				</div>
+				<br>
+				<input type="submit" name="signup" value="Sign Up" class="signup" >
+		</form>
+	</div>
 
 
 <script src="js/scripts.js"></script>

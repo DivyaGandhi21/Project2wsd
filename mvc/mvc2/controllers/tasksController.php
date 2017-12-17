@@ -99,8 +99,8 @@ header("Location: index.php?page=tasks&action=all");
     {
         $record = todos::findOne($_REQUEST['id']);
         $record->delete();
-        print_r($_POST);
-
+        
+	header("Location: index.php?page=tasks&action=all"); 
     }
 	
 	//this is to login, here is where you find the account and allow login or deny.
