@@ -24,13 +24,13 @@
 				<div class="form">
 					<h3>REGISTRATION FORM</h3>
 					<form action="index.php?page=accounts&action=register" method="post" action="" enctype="multipart/form-data">
-						<input type="text" name="First Name" id="First Name" placeholder="First Name" required autofocus/>
-						<input type="text" name="Last Name" id="Last Name" placeholder="Last Name" required autofocus/>
-						<input type="text" name="Email" id="Email" placeholder="Email" required autofocus/>
-						<input type="text" name="Contact No" id="Contact No" placeholder="Contact No" required autofocus/>
-						<input type="text" name="Birth Date" id="Birth Date" placeholder="Birth Date" required autofocus/>
-						<input type="text" name="Gender" id="Gender" placeholder="Gender" required autofocus/>
-						<input type="password" name="password" id="Password" placeholder="Password" required autofocus/>
+						<input type="text" name="fname" id="fname" placeholder="First Name" required autofocus/>
+						<input type="text" name="lname" id="lname" placeholder="Last Name" required autofocus/>
+						<input type="text" name="email" id="email" placeholder="Email" required autofocus/>
+						<input type="text" name="phone" id="phone" placeholder="Contact No" required autofocus/>
+						<input type="text" name="birthday" id="birthday" placeholder="Birth Date" required autofocus/>
+						<input type="text" name="gender" id="gender" placeholder="Gender" required autofocus/>
+						<input type="password" name="password" id="password" placeholder="Password" required autofocus/>
 						<button name="entrar" type="submit" id="contact-submit" value="entrar">Register</button>
 						
 					</form>

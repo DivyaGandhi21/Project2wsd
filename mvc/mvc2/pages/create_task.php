@@ -7,7 +7,10 @@
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
-
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+<link rel="stylesheet" href="login.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -15,14 +18,20 @@
 
 
 <form action="index.php?page=tasks&action=create" method="post">
-    Owner Email: <input type="text" name="owneremail"><br/>
-    Owner ID: <input type="text" name="ownerid"><br/>
-    Create Date: <input type="text" name="createddate"><br/>
-    Due Date: <input type="text" name="duedate"><br/>
-    Message: <input type="text" name="message"><br/>
-    Is Done: <input type="text" name="isdone"><br/><br>
-
-    <button type="submit" id="create">Add</button>
+   
+	<div class="login-page">
+				<div class="form">
+					<h3>INSERT DETAILS</h3>
+					<form action="index.php?page=accounts&action=register" method="post" action="" enctype="multipart/form-data">
+						<input type="text" name="createddate" id="createddate" placeholder="Create Date" required autofocus/>
+						<input type="text" name="duedate" id="duedate" placeholder="Due Date" required autofocus/>
+						<input type="text" name="message" id="message" placeholder="Message" required autofocus/>
+						<input type="text" name="isdone" id="isdone" placeholder="IS Done" required autofocus/>
+						<button name="entrar" type="submit" id="contact-submit" value="entrar">Add</button>
+						
+					</form>
+				</div>
+			</div>
 </form>
 
 
